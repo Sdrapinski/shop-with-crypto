@@ -8,6 +8,7 @@ const AppProvider = ({ children }) => {
   const AddToCart = (item) => {
     if (item) {
       setcart((prev) => [...prev, item]);
+      console.log(cart);
     }
   };
 

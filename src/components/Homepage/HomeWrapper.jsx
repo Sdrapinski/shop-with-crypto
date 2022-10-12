@@ -18,9 +18,9 @@ const HomeWrapper = () => {
     <Container>
       <Row>
         {NumberOfItems.map((item) => (
-          <Col style={{ marginTop: "50px" }}>
+          <Col md={3} key={item} style={{ marginTop: "50px" }}>
             {" "}
-            <ItemCard key={item} item={item} />{" "}
+            <ItemCard item={item} />{" "}
           </Col>
         ))}
       </Row>
