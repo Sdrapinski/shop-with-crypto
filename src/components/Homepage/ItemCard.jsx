@@ -3,9 +3,12 @@ import React from "react";
 
 const ItemCard = ({ item }) => {
   return (
-    <Card className="ItemCard" title={item}>
-      Twoj przedmiot do kupienia
-    </Card>
+    <div className="ItemCard__wrapper">
+      <Card className="ItemCard" title={item}>
+        <img src="https://via.placeholder.com/240" />
+        <div className="ItemCard__context">Twoj przedmiot do kupienia</div>
+      </Card>
+    </div>
   );
 };
 

@@ -20,7 +20,7 @@ const HomeWrapper = () => {
         {NumberOfItems.map((item) => (
           <Col style={{ marginTop: "50px" }}>
             {" "}
-            <ItemCard item={item} />{" "}
+            <ItemCard key={item} item={item} />{" "}
           </Col>
         ))}
       </Row>
