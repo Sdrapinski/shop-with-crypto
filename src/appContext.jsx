@@ -12,8 +12,16 @@ const AppProvider = ({ children }) => {
     }
   };
 
+  const RemoveItemFromCart = (index) => {
+    setcart((prev) => {
+      prev.splice(index, 1);
+
+      return prev;
+    });
+  };
+
   return (
-    <AppContext.Provider value={{ cart, AddToCart }}>
+    <AppContext.Provider value={{ cart, AddToCart, RemoveItemFromCart }}>
       {children}
     </AppContext.Provider>
   );

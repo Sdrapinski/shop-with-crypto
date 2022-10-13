@@ -2,23 +2,16 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ItemCard from "./ItemCard";
 import "../../style/Homepage.css";
+import items from "../../constants/items.json";
 
 const HomeWrapper = () => {
-  const NumberOfItems = [
-    "apple",
-    "orange",
-    "car",
-    "PC",
-    "TV",
-    "Mug",
-    "cactus",
-    "thing",
-  ];
+  const itemArray = items;
+
   return (
     <Container>
       <Row>
-        {NumberOfItems.map((item) => (
-          <Col md={3} key={item} style={{ marginTop: "50px" }}>
+        {itemArray.items.map((item) => (
+          <Col md={3} key={item.ID} style={{ marginTop: "50px" }}>
             {" "}
             <ItemCard item={item} />{" "}
           </Col>

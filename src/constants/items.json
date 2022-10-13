@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "ID": 1,
+      "name": "Apple",
+      "price": 0.1
+    },
+    {
+      "ID": 2,
+      "name": "orange",
+      "price": 0.3
+    },
+    {
+      "ID": 3,
+      "name": "Mug",
+      "price": 0.15
+    },
+    {
+      "ID": 4,
+      "name": "Juice",
+      "price": 0.5
+    },
+    {
+      "ID": 5,
+      "name": "Glass",
+      "price": 0.3
+    },
+    {
+      "ID": 6,
+      "name": "PC",
+      "price": 2
+    },
+    {
+      "ID": 7,
+      "name": "Car",
+      "price": 5
+    }
+  ]
+}
